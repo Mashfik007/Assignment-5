@@ -30,4 +30,24 @@ document.querySelector('#button1').addEventListener('click', function () {
 })
 
 // 2nd
+document.querySelector('#button2').addEventListener('click', function () {
+  let n = parseInt(document.querySelector('#input2').value);
+
+  if (isNaN(n) || n < 0) {
+    alert('its not a number')
+  } else {
+     
+    document.querySelector('#cal2').innerHTML =`${donation+=n}`
+    document.querySelector('#reduce').innerHTML = `${reduce-=n}`
+    document.querySelector("#congrats").style.display='flex'
+    document.querySelector("#Close").addEventListener('click',function () {
+    document.querySelector("#congrats").remove();
+
+
+    })
+  }
+
+
+})
+
 
