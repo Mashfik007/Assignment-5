@@ -14,11 +14,15 @@ document.querySelector('#button1').addEventListener('click', function () {
   if (isNaN(n) || n < 0) {
     alert('its not a number')
   } else {
-   
+     
     document.querySelector('#cal').innerHTML =`${donation+=n}`
     document.querySelector('#reduce').innerHTML = `${reduce-=n}`
     // console.log(nowakhli_donation);
+    document.querySelector("#congrats").style.display='flex'
+    document.querySelector("#close").addEventListener('click',function () {
+    document.querySelector("#congrats").remove;
 
+    })
   }
 
 
