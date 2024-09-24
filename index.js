@@ -6,10 +6,8 @@ document.querySelector("#history").addEventListener("click", function () {
 
 let perdiv = [];
 
-function total(donation, donation2) {
-  let sum = donation + donation2;
-  console.log(sum);
-  return sum;
+function updateLocalStorage() {
+  localStorage.setItem('perdiv', JSON.stringify(perdiv));
 }
 
 let donation = parseInt(document.querySelector("#cal").innerHTML);
@@ -40,15 +38,19 @@ document.querySelector("#button1").addEventListener("click", function () {
     // console.log(date);
 
     donation += n;
-    document.querySelector("#cal").innerHTML = `${donation}`;
-    document.querySelector("#reduce").innerHTML = `${(reduce -= n)}`;
+    reduce -= n
+    document.querySelector("#cal").innerHTML =donation;
+    document.querySelector("#reduce").innerHTML =reduce;
     document.querySelector("#congrats").style.display = "flex";
+
+    // console.log(perdiv);
     perdiv.push({
       amount: n,
       place: "Flood Relief in Feni",
       date: date,
+      reduce:reduce
     });
-    console.log(perdiv);
+    updateLocalStorage()
   }
 });
 // 2nd
@@ -69,17 +71,24 @@ document.querySelector("#button2").addEventListener("click", function () {
       })
       .toLocaleUpperCase();
 
+
+    // console.log(perdiv);
+    donation2 += n;
+    reduce -= n
+    document.querySelector("#cal2").innerHTML =donation2;
+    document.querySelector("#reduce").innerHTML = reduce;
+    document.querySelector("#congrats").style.display = "flex";
+
+
     perdiv.push({
       amount: n,
       place: "flood at Nowakhali",
       date: date,
+      reduce:reduce
     });
-    console.log(perdiv);
-    donation2 += n;
-    document.querySelector("#cal2").innerHTML = `${donation2}`;
-    document.querySelector("#reduce").innerHTML = `${(reduce -= n)}`;
-    document.querySelector("#congrats").style.display = "flex";
-
-    total(donation, donation2);
+    updateLocalStorage()
   }
+ 
 });
+
+
