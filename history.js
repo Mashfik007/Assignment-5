@@ -14,7 +14,7 @@ document.querySelector('#amount').innerHTML=lastTrasition.reduce
 
 trasition.forEach((trasition) => {
   let add = ``;
-  add += `<aside class="border flex flex-col p-5"><div class="flex gap-1"><span class="font-bold">${trasition.amount}</span><h1 class="font-bold">Taka is Donated for ${trasition.location},Bangladesh </h1></div><h1 class="text-gray-500">DATE:${trasition.date}</h1></aside>`;
+  add += `<aside class="border flex flex-col w-11/12 p-5"><div class="flex gap-1"><span class="font-bold">${trasition.amount}</span><h1 class="font-bold">Taka is Donated for ${trasition.location},Bangladesh </h1></div><h1 class="text-gray-500">DATE:${trasition.date}</h1></aside>`;
 
   document.querySelector("#place_it").innerHTML += add;
 });
