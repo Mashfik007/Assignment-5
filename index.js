@@ -126,7 +126,7 @@ document.querySelector("#button3").addEventListener("click", function () {
     document.querySelector("#congrats").style.display = "flex";
 
     perdiv.push({
-      location: "Flood at Noakhali",
+      location: "Aid for Injured in the Quota Movement",
       amount: n,
       reduce: reduce,
       date: date,
