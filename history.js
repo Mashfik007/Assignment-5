@@ -1,28 +1,17 @@
-document.getElementById('donation').addEventListener("click",function () {
-    window.location.href='./index.html'
-    this.style.backgroundColor = "#a3e635";
-})
+document.getElementById("donation").addEventListener("click", function () {
+  window.location.href = "./index.html";
+  this.style.backgroundColor = "#a3e635";
+});
 
-let n=JSON.parse(localStorage.getItem("perdiv"))
-let reduce=JSON.parse(localStorage.getItem("reduce"))
+let trasition = JSON.parse(localStorage.getItem("perdiv"));
+console.log(trasition);
 
-console.log(n);
+let lastTrasition=trasition[trasition.length-1]
+document.querySelector('#amount').innerHTML=lastTrasition.reduce
 
-n.forEach((donation) => {
-    let add=``;
-add+=`<aside class="border flex flex-col p-5"><div class="flex gap-1"><span class="font-bold">${donation.amount}</span><h1 class="font-bold">Taka is Donated for ${donation.place},Bangladesh </h1></div> 
-        <h1 class="text-gray-500">DATE:${donation.date}</h1></aside>`
-    
-    document.querySelector('#place_it').innerHTML+=add
+trasition.forEach((trasition) => {
+  let add = ``;
+  add += `<aside class="border flex flex-col p-5"><div class="flex gap-1"><span class="font-bold">${trasition.amount}</span><h1 class="font-bold">Taka is Donated for ${trasition.location},Bangladesh </h1></div><h1 class="text-gray-500">DATE:${trasition.date}</h1></aside>`;
 
-    document.querySelector('#amount').innerHTML=`${donation.reduce}`
-  
-  
-  
-  });
-
-
-
-
-
- 
+  document.querySelector("#place_it").innerHTML += add;
+});
