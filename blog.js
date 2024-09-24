@@ -1,7 +1,11 @@
 document.querySelector("#home").addEventListener("click", function () {
   window.location.href = "./index.html";
 });
+let trasition = JSON.parse(localStorage.getItem("perdiv"));
+console.log(trasition);
 
+let lastTrasition=trasition[trasition.length-1]
+document.querySelector('#reduce').innerHTML=lastTrasition.reduce
 
 document.querySelector("#one").addEventListener("click", function () {
   if (document.querySelector("#one1").classList.contains("hidden")) {
