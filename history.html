@@ -7,8 +7,8 @@
     <title>Document</title>
   </head>
   <body class="">
-    <nav class="flex justify-around bg-[rgb(249,_247,_243)] p-10">
-      <h1 class="text-3xl font-bold bg-lime-300 w-fit p-2 rounded-md">Blog</h1>
+     <div class="flex flex-col sticky top-0 ">    <nav class="flex justify-around bg-[rgb(249,_247,_243)] p-10 ">
+      <h1 class="text-3xl font-bold bg-lime-300 w-fit p-2 rounded-md" id="blog">Blog</h1>
       <div class="flex gap-2 items-center justify-center font-bold">
         <img src="./assets/logo.png" alt="" />
         <h1>Donate Bangladesh</h1>
@@ -20,7 +20,7 @@
     </nav>
     <header>
       <div
-        class="flex gap-9 text-2xl font-bold items-center justify-center p-12"
+        class="flex gap-9 text-2xl font-bold items-center justify-center p-12 backdrop-filter backdrop-blur-sm bg-opacity-75  "
       >
         <button class="donation border-2 p-2 rounded-md" id="donation">
           Donation
@@ -29,6 +29,11 @@
           History
         </button>
       </div>
+      </div>
+
+
+
+
     </header>
     <div id="place_it" class="flex flex-col space-y-5 items-center p-2"></div>
     <footer class="w-full h-28 bg-[rgb(249,_247,_243)]"></footer>

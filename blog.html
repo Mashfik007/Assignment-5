@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
- <style>
-     @keyframes slide-down {
-        0% {
-            transform: translateY(0);
-  }
-  100% {
-            transform: translateY(2px);
-  }
-}
+    <style>
+        @keyframes slide-down {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(2px);
+            }
+        }
 
         .slide-down {
-            animation: slide-down 10s forwards;
+            animation: slide-down 10s forwards ;
         }
-
-        .hidden {
-            display: none;
-        }
- </style>
+    </style>
 
 
-    <div
-    class="sticky top-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-65"
-  >
-    <nav
-      class="flex justify-around py-10 backdrop-filter backdrop-blur-sm bg-opacity-75 bg-[rgb(249,_247,_243)]"
-    >
-      <button
-        class="text-3xl font-semibold bg-lime-300 px-4 rounded-md"
-        id="home"
-      >
-        Home
-      </button>
-      <div class="flex justify-center items-center gap-4 font-bold">
-        <img src="./assets//logo.png" alt="" />
-        <h1>Donate Bangladesh</h1>
-      </div>
-      <div class="flex items-center justify-center">
-        <img src="./assets/coin.png" alt="" />
-        <h1 id="reduce">5600</h1>
-      </div>
-    </nav>
+    <div class="sticky top-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-65 mb-12">
+        <nav class="flex justify-around py-10 backdrop-filter backdrop-blur-sm bg-opacity-75 bg-[rgb(249,_247,_243)]">
+            <button class="text-3xl font-semibold bg-lime-300 px-4 rounded-md" id="home">
+                Home
+            </button>
+            <div class="flex justify-center items-center gap-4 font-bold">
+                <img src="./assets//logo.png" alt="" />
+                <h1>Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center justify-center">
+                <img src="./assets/coin.png" alt="" />
+                <h1 id="reduce">5600</h1>
+            </div>
+        </nav>
 
-    <div  class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl   gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-            <span>What is the Documnet Object Model  (DOM)</span>
-            <svg id="one" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        <div class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl font-bold text-2xl  mt-20  "
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+            aria-controls="accordion-collapse-body-1">
+            <span>What is the Documnet Object Model (DOM)</span>
+            <svg id="one" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
             </svg>
         </div>
-    <p id="one1" class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800 border-0  rounded-xl   gap-3" >The Document Object Model (DOM) is a programming interface that represents and interacts with HTML and XML documents.</p>
-    
- 
-
-<!-- 2nd -->
-    <div  class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl   gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-        <span>What is the Documnet Object Model  (DOM)</span>
-        <svg id="two" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
-        </svg>
-      </div>
-      <p id="two2" class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800 border-2  rounded-xl   gap-3" >The Document Object Model (DOM) is a programming interface that represents and interacts with HTML and XML documents.</p>
+        <p id="one1"
+            class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800   rounded-xl   gap-3">
+            The Document Object Model (DOM) is a programming interface that represents and interacts with HTML and XML
+            documents.</p>
 
 
- 
-    
-    <script src="./blog.js"></script>
+
+        <!-- 2nd -->
+        <div class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl font-bold text-2xl "
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+            aria-controls="accordion-collapse-body-1">
+            <span>How do you select an Element from (DOM) ?</span>
+            <svg id="two" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+            </svg>
+        </div>
+        <p id="two2"
+            class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800  rounded-xl   gap-3">
+            Using document.getElementById() or document.querySelector().</p>
+        <!-- 3rd -->
+        <div class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl font-bold text-2xl "
+            data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+            aria-controls="accordion-collapse-body-1">
+            <span>What is event delegation in the context of the DOM,and why it is useful?</span>
+            <svg id="three" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 5 5 1 1 5" />
+            </svg>
+           
+        </div>
+        <p id="three3"
+        class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800  rounded-xl   gap-3">  Don't know</p>
+
+<!-- 4th -->
+<div class="flex items-center justify-between w-full p-5 font-medium  text-gray-500 border-2  rounded-xl font-bold text-2xl "
+data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+aria-controls="accordion-collapse-body-1">
+<span>How do you manupulate an element's attributes and styles using DOM?</span>
+<svg id="four" data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M9 5 5 1 1 5" />
+</svg>
+
+</div>
+<p id="four4"
+class="hidden items-center justify-between w-full p-5 font-medium  text-gray-800  rounded-xl   gap-3">  Don't know</p>
+        <script src="./blog.js"></script>
 </body>
+
 </html>

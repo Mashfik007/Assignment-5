@@ -2,6 +2,9 @@ document.getElementById("donation").addEventListener("click", function () {
   window.location.href = "./index.html";
   this.style.backgroundColor = "#a3e635";
 });
+document.querySelector("#blog").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
 
 let trasition = JSON.parse(localStorage.getItem("perdiv"));
 console.log(trasition);
